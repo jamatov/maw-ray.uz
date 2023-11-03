@@ -854,6 +854,7 @@ header.fixed .header-btm{
 .slick-next:hover:after{
 	margin-left: -6px;
 }
+
 .slick-prev:after{
 	moz-transform: rotate(45deg);
 	ms-transform: rotate(45deg);
