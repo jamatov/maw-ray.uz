@@ -1189,10 +1189,17 @@ header.fixed .header-btm{
 	height: 60px;
 	left: 50%;
 	margin: -30px 0 0 -30px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	position: absolute;
 	top: 0;
 	width: 60px;
+}
+
+.dealer-continer .manager .photo img{
+	width: 100%;
+	height: auto;
+	border-radius: 100%;
+	
 }
 .dealer-continer .manager .col-sm-6:first-child{
 	font-size: 14px;
@@ -1248,7 +1255,7 @@ header.fixed .header-btm{
 }
 
 .clearfix img{
-	height: 400px;
+	/* height: 400px; */
 }
 .products-container .list .price{
 	background: #FCBC04;
@@ -1499,6 +1506,23 @@ header.fixed .header-btm{
     top: 0;
     left: 0;
     background: url(../images/pattern.png) rgba(0,0,0,0.1);
+}
+.partners-section{
+	padding: 70px 0;
+}
+.partners-section h2{
+
+}
+
+.partners-section .partners-body{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4vh;
+}
+
+.partners-body img{
+	width: 150px;
 }
 .indicators-container .container{
     position: relative;
@@ -1902,6 +1926,7 @@ footer a:hover{
 		top: 20px;
 		width: 100%;
 	}
+	
 	.dealer-continer .manager:before{
 		display: none;
 	}
