@@ -1390,8 +1390,9 @@ header.fixed .header-btm{
 	color: #646464;
 	font-size: 18px;
 	line-height: 26px;
-	padding: 70px 0 65px;
+	padding: 70px 0 0;
 	text-align: center;
+
 }
 .premium-container .carousel{
 }
