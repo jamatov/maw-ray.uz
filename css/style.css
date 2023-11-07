@@ -338,11 +338,30 @@ h5, .h5{
 }
 h6, .h6{
 }
+.about-company{
+	padding: 50px 20px;
+}
+
+.about-info{
+	color: #000;
+	font-weight: 500;
+	line-height: 140%;
+}
+
+.about-company .company-logo{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.content-center{
+	display: flex;
+	justify-content: center;
+}
 .title-border{
 	font-family: 'Ubuntu';
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
-	line-height: 24px;
+	line-height: 32px;
 	margin: 0 0 30px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1012,6 +1031,15 @@ header.fixed .header-btm{
 	content: "секунд";
 }
 @media only screen and (max-width: 767px){
+	.title-border{
+		font-family: 'Ubuntu';
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 32px;
+		margin: 0 0 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
 	.countdown-inner{
 		font-size: 18px;
 	}
@@ -1326,9 +1354,15 @@ header.fixed .header-btm{
 	overflow: hidden;
 }
 
+.products-container .buttons{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
 .products-container .btm a{
 	border: 2px solid #343434;
 	color: #fff;
+	width: 100% !important;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: bold;
@@ -1337,7 +1371,7 @@ header.fixed .header-btm{
 	margin-bottom: 5px;
 	moz-transition: all 200ms ease-out;
 	o-transition: all 200ms ease-out;
-	padding: 8px 20px;
+	padding: 8px 25px;
 	text-decoration: none !important;
 	text-transform: uppercase;
 	transition: all 200ms ease-out;
@@ -1348,6 +1382,93 @@ header.fixed .header-btm{
     background: transparent;
     color: #343434;
 }
+
+.btm-tg{
+	width: 50%;
+	display: flex;
+	justify-content: center;text-align: center;
+	border: 2px solid #259DD8;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	gap: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 17px;
+	margin-bottom: 5px;
+	moz-transition: all 200ms ease-out;
+	o-transition: all 200ms ease-out;
+	padding: 8px 0;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	transition: all 200ms ease-out;
+	webkit-transition: all 200ms ease-out;
+	background: #259DD8;
+}
+
+.btm-tg svg{
+	color: #fff;
+}
+
+.products-container .btm{
+	width: 50%;
+	display: flex;
+	justify-content: center;text-align: center;
+}
+
+.products-container .btm-tg a{
+	color: #fff;
+	display: inline-block;
+	align-items: center;
+	text-decoration: none;
+	
+
+}
+
+.products-container a:hover{
+	text-decoration: none;
+}
+
+.products-container .btm-call{
+	width: 100%;
+	display: none;
+	justify-content: center;text-align: center;
+	border: 2px solid #0AD711;
+	text-align: center;
+	align-items: center;
+	gap: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 17px;
+	margin-bottom: 5px;
+	moz-transition: all 200ms ease-out;
+	o-transition: all 200ms ease-out;
+	padding: 8px 0;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	transition: all 200ms ease-out;
+	webkit-transition: all 200ms ease-out;
+	background: #0AD711;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* .products-container .btm-tg a:hover{
+	color: #fff !important;
+	text-decoration: none;
+	
+} */
+
+
+.products-container .btm-tg a:hover{
+    background: transparent !important;
+		text-decoration: none;
+}
+
+
 .products-container .btn-more{
 	color: #FCBC04;
 	display: inline-block;
@@ -1518,11 +1639,11 @@ header.fixed .header-btm{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 4vh;
+	gap: 5vh;
 }
 
 .partners-body img{
-	width: 150px;
+	width: 170px;
 }
 .indicators-container .container{
     position: relative;
@@ -1611,7 +1732,7 @@ a.absolute{
 	color: #222222;
 	cursor: pointer;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;
 	margin-left: 50px;
@@ -1637,6 +1758,7 @@ a.absolute{
 }
 .info-conainer .akardion .desc{
 	display: none;
+	font-size: 16px;
 	line-height: 1.8;
 	margin-left: 50px;
 	padding: 0 20px 20px 20px;
@@ -2472,9 +2594,33 @@ input[type=checkbox].error + label{
 	.filtr-container > div{
 		width: 100%;
 	}
+
+	.products-container .btm-call{
+		display: flex;
+	}
 }
 @media only screen and (min-width: 768px){
 	.simplefilter li{
 		font-size: 16px;
 	}
+
+	
+}
+
+.phoneLabel {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.tel {
+	padding-left: 40px;
+}
+
+.form-group  {
+	position: relative;
 }
