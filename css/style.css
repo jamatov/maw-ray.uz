@@ -600,6 +600,9 @@ header.fixed .header-btm{
 	color: #222222;
 	padding: 5px 0;
 	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 .navbar-nav > li > a:after{
 	background: #FCBC04;
