@@ -2627,3 +2627,8 @@ input[type=checkbox].error + label{
 .form-group  {
 	position: relative;
 }
+
+
+.z-in{
+	z-index: 9 !important;
+}
